@@ -41,12 +41,13 @@ class MarkovMachine {
     return chain;
   }
 
-  /** Return random text from chains, starting at the first word and continuing
-   *  until it hits a null choice. */
   getRandomWord(arr) {
     let index = Math.floor(Math.random() * arr.length);
     return arr[index];
   }
+
+  /** Return random text from chains, starting at the first word and continuing
+   *  until it hits a null choice. */
 
   getText() {
     // - start at the first word in the input text
